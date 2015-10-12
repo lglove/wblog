@@ -17,12 +17,12 @@ p ng-controller="LikesController" ng-cloak=""
   button.like-button.liked ng-show=" is_liked " ng-click="cancel()"
     |{{ count }}
     span Like
-  div ng-controller = "QRCodesController"
-    .qrcode
-      a href="#" ng-model="qrcode" ng-init="qrcode=false" ng-click="show()"
-        i.fi-link
-        | #{t('qr_code')}
+  /*div ng-controller = "QRCodesController"                                  */
+  /*  .qrcode                                                                */
+  /*    a href="#" ng-model="qrcode" ng-init="qrcode=false" ng-click="show()"*/
+  /*      i.fi-link                                                          */
+  /*      | #{t('qr_code')}                                                  */
 
-    .social-share ng-show='qrcode'
-      .qrcode-wrapper
-        = render partial: "qrcode", locals: { str: blog_url(post) }
+  /*  .social-share ng-show='qrcode'                                         */
+  /*    .qrcode-wrapper                                                      */
+  /*      = render partial: "qrcode", locals: { str: blog_url(post) }        */

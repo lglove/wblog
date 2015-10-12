@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'foundation-rails', '~> 5.5.1'
 gem 'foundation-icons-sass-rails'
 gem 'font-awesome-sass'
+gem 'thin'
 
 gem 'jbuilder'
 

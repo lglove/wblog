@@ -24,7 +24,7 @@ WBlog::Application.routes.draw do
   # photos
   resources :photos, only: [:create]
   get '/qrcodes' => 'qrcodes#show'
-  
+
   namespace :admin do
     resources :posts do
       collection do
@@ -36,7 +36,7 @@ WBlog::Application.routes.draw do
     root to: 'dashboard#index'
   end
 
-  get '/about' => 'home#index'
-  get '/mobile' => 'home#mobile'
+  get '/about' => 'home#aboutme'
+  #get '/mobile' => 'home#mobile'
   get '/:type' => 'archives#index', constraints: { type: /tech|life|creator/ }
 end

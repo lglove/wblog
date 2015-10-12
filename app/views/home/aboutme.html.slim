@@ -1,0 +1,79 @@
+- content_for(:title) do
+  | #{t('title.about')}
+- content_for(:main) do
+  .about-page ng-app='app' ng-controller='AboutScrollController'
+    .top-bar-wrapper.contain-to-grid.fixed ng-class="{ active: ! is_top() }"
+      .row
+        .small-12.columns
+          nav.top-bar data-topbar='' role='navigation'
+            ul.title-area
+              li.name
+                h1
+                  a href='/' 回到博客
+            section.top-bar-section
+              ul.right
+                li
+                  a href='#about' du-smooth-scroll='' du-scrollspy='' 关于
+                li
+                  a href='#skill' du-smooth-scroll='' du-scrollspy='' 技能
+                li
+                  a href='#contact' du-smooth-scroll='' du-scrollspy='' 联系
+    #intro
+    header.intro
+      .intro-heading
+        .row
+          .small-12.columns
+            h1.heading 李戈
+            .sub-heading
+              p
+                | 成长的路怎么可能一帆风顺
+            a.circle href='#about' du-smooth-scroll=''
+              i.fa.fa-angle-double-down
+    section#about
+      .row
+        .small-12.large-9.large-centered.columns
+          h1.title 关于我
+          .sub-heading
+          p 我是李戈, 目前工作在中国北京，目标成为一名全栈工程师( Full Stack Developer ).
+          p
+            | 2014.7毕业于西安电子科技大学通信工程学院，毕业后半年二次考研失败，2015.3第一份工作网优工程师，2015.6辞职来到北京，开始了一个软件工程师的努力
+            br
+            | 现在正在软件互联网行业继续前行，期望成为一名全栈工程师。
+    section#skill
+      .row
+        .small-12.large-9.large-centered.columns
+          h1.title 开发技能
+          .skills
+              li Ruby on Rails( 入门 )
+              li Linux / OSX( 入门 )
+              li Git / Svn( 入门 )
+              li Bootstrap / Foundation 5
+              li jQuery( 入门 )
+              li HTML5
+              li CSS3
+              li Testing Automation
+              li Deploying Automation
+    section#contact
+      .row
+        .small-12.large-9.large-centered.columns
+          h1.title 联系我
+          p
+            | 如果你是和我一样的新手,我们也许可以互相交流学习，共同进步
+          p
+            | 如果您是一位大牛，希望您能给予我一些指导和建议，不胜感激
+          p.mail_to
+            = mail_to '18710846413@163.com'
+          ul.contact-ul
+            li
+              a href='https://github.com/lglove' target='_blank'
+                i.fa.fa-github
+                | Github
+            li
+              a href=' https://ruby-china.org/lovecoder' target='_blank'
+                i.fa.fa-heart
+                | RubyChina
+          p.modified-at
+            | 本页更新于 2015.10.12
+    .footer
+      .row
+        .small-12.columns
