@@ -1,5 +1,5 @@
 ---
-chdir: '/opt/app/current'
+chdir: '/opt/app/'
 environment: production
 address: 0.0.0.0
 port: 6661
