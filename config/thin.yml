@@ -1,14 +1,14 @@
 ---
-chdir: '/opt/app/current'
+chdir: '/opt/app/lige'
 environment: production
 address: 0.0.0.0
-port: 6661
+port: 5555
 timeout: 30
-log: log/thin.log
-pid: tmp/pids/thin.pid
+log: /opt/app/lige/log/thin.log
+pid: /opt/app/lige/tmp/pids/thin.pid
 max_conns: 1024
 max_persistent_conns: 512
 require: []
 wait: 30
-servers: 4
+servers: 1
 daemonize: true
