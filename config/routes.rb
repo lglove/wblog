@@ -39,4 +39,5 @@ WBlog::Application.routes.draw do
   get '/about' => 'home#aboutme'
   #get '/mobile' => 'home#mobile'
   get '/:type' => 'archives#index', constraints: { type: /tech|life|creator/ }
+  get '/wechat' => 'wechat_support#auth_wechat'
 end
