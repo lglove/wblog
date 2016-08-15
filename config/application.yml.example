@@ -1,10 +1,10 @@
 # This section MUST be configured
-SITE_NAME: "WinDy's Blog"
+SITE_NAME: "lglove's Blog"
 # Admin Dashboard Management, If ADMIN_USER is blank, No One can login into Dashboard
 # Recommend using your personal Email, if SENDCLOUD_USER is setted, System WILL send you notification email.
 # For more detail, see: /app/models/comment.rb
-ADMIN_USER: 'admin'
-ADMIN_PASSWORD: 'admin'
+ADMIN_USER: 'lglove'
+ADMIN_PASSWORD: 'logic'
 
 
 # Rails secret token, use `rake secret` to generate new one here.
@@ -15,10 +15,10 @@ LOCALE: 'zh-CN'
 
 # sidekiq redis namespace, if you configure two blog in on VPS, you should change it.
 # default is wblog
-REDIS_NAMESPACE: 'wblog'
+REDIS_NAMESPACE: 'lgblog'
 
 # META description for SEO
-INTRODUCE: '这是李亚飞的博客, 李亚飞是暂住在深圳的一名 Ruby 程序员, 这里是关于技术, 创业, 生活的思考'
+INTRODUCE: '我是李戈'
 
 # optional
 # google analytics, blank it if you don't need
