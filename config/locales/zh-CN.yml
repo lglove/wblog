@@ -14,7 +14,7 @@ zh-CN:
   home:
     no_blog_here: '这里没有博客'
     read: '阅读全文 >>'
-    created_at: '发表于 '
+    created_at: 'lglove发表于 '
     recent: '近期博客'
 
   subscribes:
